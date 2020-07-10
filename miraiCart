@@ -1,0 +1,38 @@
+#! /bin/sh
+# Starts and stops Cartelera
+# /etc/init.d/miraiCart
+### BEGIN INIT INFO
+# Provides:     Mirai Service Cartelera
+# Required-Start:       $syslog
+# Required-Stop:        $syslog
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Cartelera
+### END INIT INFO
+
+#Load up Cartelera when called
+case "$1" in
+
+start)
+        echo "Starting Cartelera..."
+        cd /home/uslu/gsign/
+        sudo sh -c "TERM=linux setterm -foreground black -clear all >/dev/tty0"
+        sudo screen -dmS cartelera bash rs.sh
+;;
+
+stop)
+        echo "Stopping Mirai Service..."
+        sudo screen -S cartelera -X quit
+        sudo killall fbi
+        sudo dd if=/dev/zero of=/dev/fb0;
+;;
+
+restart)
+        echo "Restarting Mirai Service..."
+        $0 stop
+        $0 start
+;;
+*)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
