@@ -36,7 +36,7 @@ echo "el usuario del cliente ejemplo:uxm-heineken"
 echo "."
 echo "verifica que todo este bien y solo da :q"
 read -p "Presiona ENTER cuando estes listo para editar el archivo.${reset}"
-sudo vim /home/uslu/gsing/sync.cfg;
+sudo vim /home/uslu/gsign/sync.cfg;
 reset;
 clear;
 echo "${red}${bg_white}${ng}Instala la sig. configuracion del crontab"
