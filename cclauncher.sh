@@ -17,7 +17,7 @@ while true; do
         sleep 1;
 else
         sudo bash /home/uslu/gsign/realtime.sh;
-        sudo bash /home/uslu/gsign/watch_dog.sh;
+#        sudo bash /home/uslu/gsign/watch_dog.sh;
         date;
         sleep 600;
 #       done
