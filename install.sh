@@ -1,5 +1,5 @@
 #!/bin/bash
-#Copyright 2019 Gustavo Santana
+#Copyright 2019-2020 Gustavo Santana
 #(C) Mirai Works LLC
 #tput setab [1-7] Set the background colour using ANSI escape
 #tput setaf [1-7] Set the foreground colour using ANSI escape
@@ -23,7 +23,7 @@ echo "${red}${bg_white}${ng}Comenzando instalacion...${reset}"
 cd /home/uslu/;
 echo "Instalando Servicios..."
 sudo cp /home/uslu/gsign/miraiCart /etc/init.d/miraiCart;
-cp Llayer_utils/sync.cfg gsign
+yes | cp Llayer_utils/sync.cfg gsign
 echo "Setting Perms"
 sudo chmod +x /etc/init.d/miraiCart;
 echo "Reb Cache"

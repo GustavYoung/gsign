@@ -69,6 +69,6 @@ instalar en el crontab la linea :
 En el repo hay un brach de mirai works si hay problemas de rendimiento usar ese repo junto con sus binarios OMXplayer y BroadcomShell 
 
 
-Copyright 2017 Gustavo Santana
+Copyright 2017-2020 Gustavo Santana
 (C)2017 Mirai Works LLC
 
