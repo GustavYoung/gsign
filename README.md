@@ -10,18 +10,26 @@ Version en produccion 1.0.0
 ### ¿Como instalarlo? ###
 Utima Actualizacion de todo 15-XI-2017
 
+### En automatico ###
+
+
+bash install.sh
+
+
+### A pata ###
+
+
+
 1.-Realizar la configuración normal de la memoria
      La memoria del GPU split se debe poner a 256mb en lugar de 128
 
-2- copiar las carpetas "adsplayer" y "sponsors" desde la carpeta de cada cliente en el servidor de uxmal.
-
-uxmal-ftp@uxm3.uxmalstream.com:3113/home/
-
-3.-Instalar lsof
+2- Instalar lsof
 
 sudo apt-get install lsof
 
 4.-Editar lo siguiente en el script de uxmal.
+
+apagar el black screen en versiones con ucp
 
 sudo vim uxmalstream/index.js
 
@@ -40,6 +48,10 @@ despues lanzar el comando
 sudo update-rc.d AdsPlayer defaults
 
 y probar si el servicio arranca con: sudo service AdsPlayer start
+
+instalar en el crontab la linea :
+
+@reboot sudo bash /home/uslu/gsign/cclauncher.sh
 
 ### Contribution guidelines ###
 
