@@ -18,7 +18,7 @@ bg_white=`tput setab 7`
 ng=`tput bold`
 reset=`tput sgr0`
 #echo "${red}red text ${green}green text${reset}"
-configfile='/home/uslu/AdsSync/sync.cfg'
+configfile='/home/uslu/gsign/sync.cfg'
 configfile_secured='/tmp/sync.cfg'
 
 # Elemento de seguridad previene el envenenamiento del archivo de configuracion
